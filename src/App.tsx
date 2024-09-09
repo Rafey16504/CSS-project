@@ -31,27 +31,28 @@ const App: React.FC = () => {
             <button className="px-4 py-2 bg-transparent text-black rounded text-base font-medium font-sans">
               About
             </button>
-            <button className="px-4 py-2 bg-transparent text-black rounded text-base font-medium font-sans">
+            <button className=" px-4 py-2 bg-transparent text-black rounded text-base font-medium font-sans">
               Contact
             </button>
             
           </div>
+ 
 
-          <div className="flex">
-            <button className="lg:w-48">
-                <p className=" px-4 py-2 bg-green-dark text-white rounded-3xl text-sm w-3/4 font-medium font-sans">
-                  Apply Now
-                </p>
-              </button>
-              <button>
-              <p className=" px-4 py-2 bg-green-dark text-white rounded-3xl text-sm w-3/4 font-medium font-sans">
-                <img
-                  src="/right-arrow.png"
-                  className="h-8"
-                />
+          <div className="group inline-flex transition transform">
+          <button className="lg:w-30  group-hover:-translate-x-2 duration-500 ease-in-out">
+              <p className="px-4 py-2 bg-green-dark text-white rounded-3xl text-sm w-36 font-medium font-sans ">
+                Apply Now
               </p>
-              </button>
-          </div>
+            </button>
+            <button className="group-hover:translate-x-2 duration-500 ease-in-out">
+            <svg className="text-gray-800 dark:text-white bg-green-dark rounded-3xl w-8 h-8 -rotate-45 group-hover:rotate-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="-12 -12 48 48">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+            </svg>
+
+
+            </button>
+        </div>
+
         </div>
       </header>
       {/* Drawer Component */}
