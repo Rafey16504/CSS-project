@@ -8,6 +8,25 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
+    fontFamily:{
+      'grotesk': ['"Familjen Grotesk"'],
+    },
+    
+    fontWeight: {
+      thin: '100',
+      hairline: '100',
+      extralight: '200',
+      light: '300',
+      normal: '400',
+      medium: '500',
+      nearbold:'550',
+      semibold: '600',
+      almostbold:'650',
+      bold: '700',
+      extrabold: '800',
+      'extra-bold': '800',
+      black: '900',
+    },
     colors:{
       'light': '#FFFFF3',
       'blue': '#1fb6ff',
