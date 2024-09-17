@@ -10,6 +10,8 @@ module.exports = {
     },
     fontFamily:{
       'grotesk': ['"Familjen Grotesk"'],
+      'ubuntu': ['"Ubuntu"'],
+      'oswald': ['"Oswald"']
     },
     
     fontWeight: {
@@ -19,12 +21,9 @@ module.exports = {
       light: '300',
       normal: '400',
       medium: '500',
-      nearbold:'550',
       semibold: '600',
-      almostbold:'650',
       bold: '700',
       extrabold: '800',
-      'extra-bold': '800',
       black: '900',
     },
     colors:{
