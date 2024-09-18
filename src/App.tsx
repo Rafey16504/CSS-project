@@ -7,8 +7,9 @@ import 'swiper/css/autoplay';
 const App: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   return (
-    <div className="min-h-screen bg-light scrollable scroll-smooth">
-      <header className="">
+    <div className="w-full min-h-screen bg-light scrollable scroll-smooth">
+      
+      <header className="sticky top-0 z-50 bg-light">
         {" "}
         {/* Header */}
         <div className="container mx-auto px-0 py-5 flex items-center justify-between">
@@ -22,7 +23,7 @@ const App: React.FC = () => {
 
           {/* Buttons in the center */}
 
-          <div className="flex-1 flex justify-center space-x-4">
+          <div className="flex-1 flex justify-center space-x-4 ml-[360px] mr-[400px]">
             <button className="px-20 py-2 bg-transparent text-black rounded"></button>
             <button className="px-3 py-2 bg-transparent text-black rounded text-base font-medium font-grotesk">
               Features
@@ -39,7 +40,9 @@ const App: React.FC = () => {
           </div>
           <button className="ml-auto mr-auto py-2 bg-transparent text-black rounded text-base font-normal "></button>
 
-          <div className="ml-auto flex items-center -space-x-4">
+          <div className="flex-1 flex justify-center space-x-4">
+            {" "}
+            {/* Apply now Button */}
             <div className="group inline-flex transition transform">
               <button className="px-4 py-2 bg-transparent text-black rounded text-base font-normal "></button>
 
@@ -71,25 +74,27 @@ const App: React.FC = () => {
       </header>
 
       <hr className="border-gray-light" />
+
       <main className="container mx-auto px-4 py-8 ">
         {" "}
         {/* Heading of page */}
         <h1 className="px-4 py-3 font-bold text-4xl text-center font-ubuntu  ">
           Discover ESSE: Carving the Future of E-commerce
         </h1>
-        <h1 className="px-4 py-2 font-normal text-xl text-center font-ubuntu">
+        <h1 className="px-4 py-3 font-medium text-[#2c2727] text-xl text-center font-ubuntu ">
           Welcome to ESSE, where social media meets ecommerce, to shape the
           future of online shopping experiences.
         </h1>
       </main>
-      <div className="flex justify-center -space-x-4 -space-y-px ">
+
+      <div className="flex justify-center">
         {" "}
-        {/* Buttons under the header */}
-        <div className="group inline-flex transition transform">
-          <button className="px-4 py-2 bg-transparent text-black rounded text-base font-normal "></button>
+        {/* Buttons under heading */}
+        <div className="group inline-flex transition transform -space-y-4">
+          <button className="px-0 py-2 bg-transparent text-black rounded text-base font-normal "></button>
 
           <button className="w-auto  group-hover:-translate-x-2 duration-500 ease-in-out">
-            <p className="px-4 py-2 bg-green-dark text-white rounded-full text-sm w-64  font-normal font-ubuntu">
+            <p className="px-0 py-2 bg-green-dark text-white rounded-full text-sm w-64  font-normal font-ubuntu">
               View Products
             </p>
           </button>
@@ -112,10 +117,10 @@ const App: React.FC = () => {
           </button>
         </div>
         <div className="group inline-flex transition transform">
-          <button className="px-4 py-2 bg-transparent text-black rounded text-base font-normal "></button>
+          <button className="px-2 py-2 bg-transparent text-black rounded text-base font-normal "></button>
 
           <button className="w-auto  group-hover:-translate-x-2 duration-500 ease-in-out">
-            <p className="px-4 py-2 bg-none text-black rounded-full text-sm w-64 font-normal  font-ubuntu">
+            <p className="px-2 py-2 bg-none text-black rounded-full text-sm w-64 font-normal  font-ubuntu">
               Join Us
             </p>
           </button>
@@ -139,76 +144,46 @@ const App: React.FC = () => {
         </div>
       </div>
 
-      <div className="w-full py-24"> {/* Sliding images */}
-        
-      <Swiper
-        modules={[Autoplay]}
-        spaceBetween={20}
-        centeredSlides={false}
-        autoplay={{ delay: 1500, disableOnInteraction: false }}
-        slidesPerView={6}
-        loop={true} 
-        className="swiper-container overflow-hidden" 
-        speed={2000}
-      >
-        <SwiperSlide>
-          <img
-            src="/slide_2.jpg"
-            alt="Slide 1"
-            className="h-96 rounded-4xl"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/slide_1.jpg"
-            alt="Slide 2"
-            className="h-96 rounded-4xl"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/slide_2.jpg"
-            alt="Slide 3"
-            className="h-96 rounded-4xl"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/slide_1.jpg"
-            alt="Slide 4"
-            className="h-96 rounded-4xl"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/slide_2.jpg"
-            alt="Slide 5"
-            className="h-96 rounded-4xl"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/slide_1.jpg"
-            alt="Slide 6"
-            className="h-96 rounded-4xl"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/slide_2.jpg"
-            alt="Slide 5"
-            className="h-96 rounded-4xl"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/slide_1.jpg"
-            alt="Slide 6"
-            className="h-96 rounded-4xl"
-          />
-        </SwiperSlide>
-      </Swiper>
-    </div>
+      <div className="w-full py-16">
+        {" "}
+        {/* Sliding images */}
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={10}
+          centeredSlides={false}
+          autoplay={{ delay: 1500, disableOnInteraction: false }}
+          slidesPerView={4}
+          loop={true}
+          className="swiper-container overflow-hidden"
+          speed={2000}
+        >
+          <SwiperSlide>
+            <img src="/slide_3.jpg" className="h-auto rounded-lg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/slide_4.jpg" className="h-auto rounded-lg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/slide_1.jpg" className="h-auto rounded-lg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/slide_2.jpg" className="h-auto rounded-lg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/slide_3.jpg" className="h-auto rounded-lg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/slide_4.jpg" className="h-auto rounded-lg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/slide_1.jpg" className="h-auto rounded-lg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/slide_2.jpg" className="h-auto rounded-lg" />
+          </SwiperSlide>
+        </Swiper>
+      </div>
+
     </div>
   );
 };
