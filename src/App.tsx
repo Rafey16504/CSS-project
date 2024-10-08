@@ -147,11 +147,11 @@ const App: React.FC = () => {
           modules={[Autoplay]}
           spaceBetween={20}
           centeredSlides={false}
-          autoplay={{ delay: 1500, disableOnInteraction: false }}
+          autoplay={{ delay: 250, disableOnInteraction: false }}
           slidesPerView={4}
           loop={true}
           className="swiper-container overflow-hidden"
-          speed={2000}
+          speed={1500}
         >
           <SwiperSlide>
             <img src="/slide_3.jpg" className="h-auto rounded-3xl" />
@@ -191,6 +191,7 @@ const App: React.FC = () => {
       </div>
 
       <div id="features" className="flex">
+        {/* Features */}
         <div className="py-10 flex-col">
           {/* Left Column of features */}
           <div className="px-28">
@@ -278,6 +279,57 @@ const App: React.FC = () => {
               Feature no. 4 <span className="mx-2">•</span> Fashion Hub
             </p>
           </div>
+        </div>
+      </div>
+
+      <div className="py-96 bg-green-verydark rounded-2xl max-h-80">
+        {/* Targeted Brands */}
+        <div className="space-32">
+          <p className="-mt-52 px-8 font-ubuntu font-base text-white">
+            <span className="mx-2">•</span> Our Stores
+          </p>
+          <div className="-mt-8 px-80">
+            <p className=" font-ubuntu text-4xl font-medium text-white">
+              Discover Our Targeted Brands
+            </p>
+          </div>
+          <div className="px-32 ml-144 ">
+            <p className="font-ubuntu ml-128 text-white">
+              Stay tuned for upcoming announcements!
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col px-10 overflow-hidden">
+          {/* Brands */}
+          <div className="group flex flex-row items-center space-x-6 store lg:h-20 lg:cursor-pointer transition transform px-80">
+            <img
+              src="Brand.jpg"
+              className="h-14 w-14 rounded-2xl object-cover transition-all duration-500 transform group-hover:scale-110 group-hover:translate-x-2 lg:h-0 lg:w-auto"
+              alt="Brand"
+              height="56px"
+              width="56px"
+            />
+            <h1 className="font-bold text-4xl transition-all duration-500 transform group-hover:translate-x-32 text-white">
+              Sapphire
+            </h1>
+          </div>
+
+          <div className="ml-72 h-0.5 bg-white w-auto mr-32"></div>
+          <div className="px-80 py-10">
+            <p className="font-ubuntu font-bold text-4xl text-white">Lulusar</p>
+          </div>
+          <div className="ml-72 h-0.5 bg-white w-auto mr-32"></div>
+          <div className="px-80 py-10">
+            <p className="font-ubuntu font-bold text-4xl text-white">
+              Sapphire
+            </p>
+          </div>
+          <div className="ml-72 h-0.5 bg-white w-auto mr-32"></div>
+          <div className="px-80 py-10">
+            <p className="font-ubuntu font-bold text-4xl text-white">One</p>
+          </div>
+          <div className="ml-72 h-0.5 bg-white w-auto mr-32"></div>
         </div>
       </div>
     </div>
