@@ -282,7 +282,7 @@ const App: React.FC = () => {
         </div>
       </div>
 
-      <div className="py-96 bg-green-verydark rounded-2xl max-h-80">
+      <div className="py-96 bg-green-verydark rounded-2xl max-h-72">
         {/* Targeted Brands */}
         <div className="space-32">
           <p className="-mt-52 px-8 font-ubuntu font-base text-white">
@@ -302,32 +302,50 @@ const App: React.FC = () => {
 
         <div className="flex flex-col px-10 overflow-hidden">
           {/* Brands */}
-          <div className="group flex flex-row items-center space-x-6 store lg:h-20 lg:cursor-pointer transition transform px-80">
+          <div className="group flex flex-row items-center store lg:h-20 lg:cursor-pointer transition transform px-60">
             <img
               src="Brand.jpg"
-              className="h-14 w-14 rounded-2xl object-cover transition-all duration-500 transform group-hover:scale-110 group-hover:translate-x-2 lg:h-0 lg:w-auto"
+              className="rounded-2xl scale-0 transition-all duration-500 transform group-hover:scale-110 lg:h-14 lg:w-20 group-hover:translate-x-24 -ml-8"
               alt="Brand"
-              height="56px"
-              width="56px"
             />
-            <h1 className="font-bold text-4xl transition-all duration-500 transform group-hover:translate-x-32 text-white">
+            <h1 className="font-bold text-4xl transition-all duration-500 transform group-hover:translate-x-20 text-white ml-8">
               Sapphire
             </h1>
           </div>
 
           <div className="ml-72 h-0.5 bg-white w-auto mr-32"></div>
-          <div className="px-80 py-10">
-            <p className="font-ubuntu font-bold text-4xl text-white">Lulusar</p>
+          <div className="group flex flex-row items-center store lg:cursor-pointer transition transform px-52 py-5">
+            <img
+              src="Brand2.jpg"
+              className="rounded-2xl scale-0 transition-all duration-500 transform group-hover:scale-110 lg:h-16 lg:w-auto group-hover:translate-x-24"
+              alt="Brand2"
+            />
+            <h1 className="font-bold text-4xl transition-all duration-500 transform group-hover:translate-x-28 text-white">
+              HSY
+            </h1>
           </div>
           <div className="ml-72 h-0.5 bg-white w-auto mr-32"></div>
-          <div className="px-80 py-10">
-            <p className="font-ubuntu font-bold text-4xl text-white">
-              Sapphire
-            </p>
+          <div className="group flex flex-row items-center store lg:cursor-pointer transition transform px-40 py-5">
+            <img
+              src="Brand3.jpg"
+              className="rounded-2xl scale-0 transition-all duration-500 transform group-hover:scale-110 lg:h-16 lg:w-auto group-hover:translate-x-36"
+              alt="Brand3"
+            />
+            <h1 className="font-bold text-4xl transition-all duration-500 transform group-hover:translate-x-48 text-white -ml-8">
+              Lulusar
+            </h1>
           </div>
+
           <div className="ml-72 h-0.5 bg-white w-auto mr-32"></div>
-          <div className="px-80 py-10">
-            <p className="font-ubuntu font-bold text-4xl text-white">One</p>
+          <div className="group flex flex-row items-center store lg:cursor-pointer transition transform px-48 py-5">
+            <img
+              src="Brand4.jpg"
+              className="rounded-2xl scale-0 transition-all duration-500 transform group-hover:scale-110 lg:h-16 lg:w-32 group-hover:translate-x-28"
+              alt="Brand"
+            />
+            <h1 className="font-bold text-4xl transition-all duration-500 transform group-hover:translate-x-32 text-white">
+              Junaid Jamshed (J.)
+            </h1>
           </div>
           <div className="ml-72 h-0.5 bg-white w-auto mr-32"></div>
         </div>
