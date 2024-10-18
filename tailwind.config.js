@@ -39,7 +39,8 @@ module.exports = {
       'gray-light': '#d3dce6',
       'green-dark': '#2F590F',
       'green-verydark' : "#031C13",
-      'white':'#FFFFFF'
+      'white':'#FFFFFF',
+      'black':'#0a0a0a'
     },
     extend: {
       spacing: {

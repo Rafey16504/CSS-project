@@ -282,7 +282,7 @@ const App: React.FC = () => {
         </div>
       </div>
 
-      <div className="py-96 bg-green-verydark rounded-2xl max-h-72">
+      <div className="py-72 bg-green-verydark rounded-2xl max-h-72">
         {/* Targeted Brands */}
         <div className="space-32">
           <p className="-mt-52 px-8 font-ubuntu font-base text-white">
@@ -349,7 +349,35 @@ const App: React.FC = () => {
           </div>
           <div className="ml-72 h-0.5 bg-white w-auto mr-32"></div>
         </div>
+        <div className="relative ml-20">
+          <img src="/socialflare.jpg" className="rounded-4xl" alt="Brand" />
+          <p className="absolute top-10 left-28 font-ubuntu text-white text-3xl font-bold bg-black bg-opacity-70 backdrop-blur-lg rounded-xl px-4 py-3">
+            “ ESSE: Online Retail<br/> with Social Flair “
+          </p>
+        </div>
       </div>
+
+      <div className="mt-auto py-128 flex lg:flex-row ">
+  {/* About Text */}
+  <p className="lg:w-1/4 px-20 font-grotesk font-base">• About</p>
+
+  <p className="lg:w-5/12 -ml-80 text-3xl font-bold text-right">
+    At ESSE, you will find yourself in a<br /> carefully curated world of fashion. We<br /> offer you plenty of choices from<br /> leading apparel brands around the<br /> world. Quality Assurance is our<br /> promise to you, so you can shop with<br /> the confidence that you shall be<br /> delivered exactly what you ordered.
+  </p>
+
+  <p className=" px-10 ml-10 text-lg font-normal font-ubuntu">
+    ESSE is as interactive as social media, and as convenient as e-commerce. Connect, share,<br />  and shop together! We focus exclusively on apparel. Our platform invites leading companies<br />  to market their lines, so you can prepare your wardrobe for this season with as many options<br />  as you would like on your fingertips.<br /> 
+    <br /> 
+    We facilitate direct communication between brands and customers, enhancing the shopping<br />  experience with real-time interactions and feedback. By leveraging AI, we offer personalized<br />  recommendations, making it easier for you to find items that match your likes, interests and<br />  preferences. All of us have our favorites. You can now not only pick and choose, but also<br />  share them, whilst connecting to other users with similar tastes!<br /> 
+    <br /> 
+    Have you ever wondered how your outfits will look when you wear them? Start with creating <br />a  virtual avatar, and visualize your wardrobe in 3D here at ESSE! After that, you can drop by<br />  our Virtual Fitting Room to try on your clothes on your digital self. We also use intuitive AI to<br />  send recommendations matching your style your way with our Style Match feature!<br /> 
+    <br /> 
+    Feel free to connect with fashion enthusiasts in the Fashion Hub, where you can share, learn<br />  and inspire those who share your aesthetic.
+  </p>
+</div>
+
+
+
     </div>
   );
 };
