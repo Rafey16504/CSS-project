@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Controller } from "swiper/modules";
+import { Autoplay} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 
@@ -620,7 +620,7 @@ const App: React.FC = () => {
           </a>
         </div>
       </div>
-      
+
     </div>
   );
 };
